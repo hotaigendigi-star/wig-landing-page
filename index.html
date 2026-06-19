@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowHair™ – Premium Ombre Blonde Body Wave Wig | Feel Beautiful Again</title>
+  <meta name="description" content="Transform your look instantly with our best-selling 24-inch Ombre Blonde Body Wave Lace Front Wig. Natural hairline, beginner-friendly, free shipping. Shop now and feel beautiful again." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=2.0" />
+</head>
+<body>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-inner">
+      <span class="announcement-dot"></span>
+      <span>🔥 LIMITED TIME: Save up to $198 — Free Shipping on All Orders</span>
+      <span class="announcement-dot"></span>
+      <span>⏰ <strong id="countdown"></strong> Left at This Price</span>
+      <span class="announcement-dot"></span>
+      <span>✈️ Ships to USA • Canada • UK • Australia • Europe</span>
+    </div>
+  </div>
+
+  <!-- ===== STICKY HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+      <div class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">GlowHair<sup>™</sup></span>
+      </div>
+      <nav class="header-nav">
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#consultation">Consultation</a>
+      </nav>
+      <a href="#consultation" class="header-cta btn btn-primary">Shop Now</a>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE NAV ===== -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+    <a href="#reviews" class="mobile-nav-link">Reviews</a>
+    <a href="#specs" class="mobile-nav-link">Specifications</a>
+    <a href="#faq" class="mobile-nav-link">FAQ</a>
+    <a href="#shipping" class="mobile-nav-link">Shipping</a>
+    <a href="#consultation" class="mobile-nav-link">Free Consultation</a>
+    <a href="#consultation" class="btn btn-primary mobile-nav-cta">🛍️ Shop Now</a>
+  </nav>
+
+  <!-- ===== SECTION 1: HERO ===== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+
+      <!-- LEFT: Hero Image -->
+      <div class="hero-image-col">
+        <div class="hero-image-wrapper">
+          <div class="hero-badge-float">
+            <span>✨ Best Seller</span>
+          </div>
+          <img
+            src="images/wig-front.png"
+            alt="Premium Ombre Blonde Body Wave Lace Front Wig — Front View"
+            class="hero-main-img"
+            loading="eager"
+          />
+          <div class="hero-img-overlay">
+            <div class="hero-img-badge">
+              <span class="review-stars">⭐⭐⭐⭐⭐</span>
+              <span class="review-count">10,000+ Happy Customers</span>
+            </div>
+          </div>
+        </div>
+        <!-- Thumbnail gallery -->
+        <div class="hero-thumbs">
+          <img src="images/wig-front.png" alt="Wig front view" class="thumb active" />
+          <img src="images/wig-side.jpg" alt="Wig side view" class="thumb" />
+          <img src="images/wig-back.jpg" alt="Wig back view" class="thumb" />
+        </div>
+      </div>
+
+      <!-- RIGHT: Hero Content -->
+      <div class="hero-content-col" id="pricing">
+        <div class="hero-stars">
+          <span class="stars">⭐⭐⭐⭐⭐</span>
+          <span class="rating-text">Rated 4.9/5 — <strong>2,847 Reviews</strong></span>
+        </div>
+
+        <h1 class="hero-headline">Feel Beautiful Again<br /><em>In Less Than 60 Seconds</em></h1>
+
+        <p class="hero-sub">
+          Transform your look instantly with our best-selling Ombre Blonde Body Wave Wig.<br />
+          <strong>No salon appointments. No hair damage. No hours spent styling.</strong>
+        </p>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-cards" id="pricingCards">
+
+          <div class="pricing-card" id="card1" data-price="99" onclick="selectCard(1)">
+            <div class="card-badge bestseller">⭐ Best Seller</div>
+            <div class="card-top">
+              <span class="card-title">24 Inch — Single Wig</span>
+              <div class="card-prices">
+                <span class="price-old">$149</span>
+                <span class="price-new">$99</span>
+              </div>
+            </div>
+            <div class="card-save">You Save $50</div>
+          </div>
+
+          <div class="pricing-card popular selected" id="card2" data-price="179" onclick="selectCard(2)">
+            <div class="card-badge popular-badge">🔥 Most Popular</div>
+            <div class="card-top">
+              <span class="card-title">Buy 2 Wigs — Bundle</span>
+              <div class="card-prices">
+                <span class="price-old">$298</span>
+                <span class="price-new">$179</span>
+              </div>
+            </div>
+            <div class="card-save">You Save $119</div>
+          </div>
+
+          <div class="pricing-card" id="card3" data-price="249" onclick="selectCard(3)">
+            <div class="card-badge value-badge">💎 Best Value</div>
+            <div class="card-top">
+              <span class="card-title">Buy 3 Wigs — Bundle</span>
+              <div class="card-prices">
+                <span class="price-old">$447</span>
+                <span class="price-new">$249</span>
+              </div>
+            </div>
+            <div class="card-save">You Save $198</div>
+          </div>
+
+        </div>
+
+        <!-- Add-ons -->
+        <div class="addons-section">
+          <p class="addons-label">✨ Enhance Your Order (Optional Add-ons)</p>
+          <div class="addons-grid">
+            <label class="addon-item" id="addon-stand">
+              <input type="checkbox" class="addon-check" data-price="12" onchange="updateTotal()" />
+              <span class="addon-icon">🪞</span>
+              <span class="addon-name">Wig Stand</span>
+              <span class="addon-price">+$12</span>
+            </label>
+            <label class="addon-item" id="addon-brush">
+              <input type="checkbox" class="addon-check" data-price="9" onchange="updateTotal()" />
+              <span class="addon-icon">🪮</span>
+              <span class="addon-name">Pro Wig Brush</span>
+              <span class="addon-price">+$9</span>
+            </label>
+            <label class="addon-item" id="addon-kit">
+              <input type="checkbox" class="addon-check" data-price="19" onchange="updateTotal()" />
+              <span class="addon-icon">💆‍♀️</span>
+              <span class="addon-name">Wig Care Kit</span>
+              <span class="addon-price">+$19</span>
+            </label>
+            <label class="addon-item" id="addon-box">
+              <input type="checkbox" class="addon-check" data-price="15" onchange="updateTotal()" />
+              <span class="addon-icon">🎁</span>
+              <span class="addon-name">Luxury Gift Box</span>
+              <span class="addon-price">+$15</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Total & CTA -->
+        <div class="order-total-row">
+          <div class="order-total-label">Order Total:</div>
+          <div class="order-total-price" id="orderTotal">$179</div>
+        </div>
+
+        <button class="btn btn-primary btn-lg btn-cta" id="mainBuyBtn" onclick="handleBuy(event, 179, 'Buy 2 Bundle')">
+          💬 GET FREE CONSULTATION NOW
+        </button>
+
+        <!-- Trust Badges -->
+        <div class="trust-badges">
+          <div class="trust-item"><span class="trust-icon">🚚</span><span>Free Shipping</span></div>
+          <div class="trust-item"><span class="trust-icon">🔒</span><span>Secure Checkout</span></div>
+          <div class="trust-item"><span class="trust-icon">📦</span><span>Order Tracking</span></div>
+          <div class="trust-item"><span class="trust-icon">💬</span><span>Premium Support</span></div>
+          <div class="trust-item"><span class="trust-icon">✅</span><span>30-Day Guarantee</span></div>
+        </div>
+
+        <!-- Payment Icons -->
+        <div class="payment-icons">
+          <span class="payment-icon">VISA</span>
+          <span class="payment-icon">MC</span>
+          <span class="payment-icon">AMEX</span>
+          <span class="payment-icon">PayPal</span>
+          <span class="payment-icon">Apple Pay</span>
+          <span class="payment-icon">Shop Pay</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: EMOTIONAL STORY ===== -->
+  <section class="emotional-section" id="story">
+    <div class="container">
+      <div class="section-label">Our Story</div>
+      <h2 class="section-title">It's More Than Just Hair</h2>
+      <div class="emotional-grid">
+        <div class="emotional-image-col">
+          <img
+            src="images/our-story.jpg"
+            alt="Woman feeling confident with beautiful hair"
+            class="emotional-img"
+          />
+          <div class="emotional-stat-cards">
+            <div class="stat-card">
+              <div class="stat-number">10,000<span>+</span></div>
+              <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">95<span>%</span></div>
+              <div class="stat-label">Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+        <div class="emotional-text-col">
+          <blockquote class="emotional-quote">"Hair is the frame that holds your face — and your confidence."</blockquote>
+          <p>Every morning, millions of women look in the mirror and feel a pang of insecurity. <strong>Thinning hair. Hair loss. Postpartum shedding.</strong> It's more common than you think — and it can quietly steal your joy.</p>
+          <p>We know what it's like to feel like you've lost a part of yourself. Hair isn't just hair. It's your <strong>identity</strong>. It's the first thing you notice in the mirror. It's tied to how you walk into a room, how you hold your head, how you feel about yourself.</p>
+          <p>That's why we created the <strong>GlowHair™ Ombre Blonde Wig</strong> — not just as a hair solution, but as a <em>confidence revolution</em>. In under 60 seconds, you can step into a version of yourself that feels radiant, powerful, and completely you.</p>
+          <p class="emotional-emphasis">✨ Because you deserve to feel beautiful — every single day.</p>
+          <div class="emotional-benefits">
+            <div class="emotional-benefit-item">
+              <span class="benefit-emoji">💛</span>
+              <div>
+                <strong>Instant Confidence</strong>
+                <p>Walk into any room radiating beauty and self-assurance</p>
+              </div>
+            </div>
+            <div class="emotional-benefit-item">
+              <span class="benefit-emoji">🌸</span>
+              <div>
+                <strong>Zero Hair Damage</strong>
+                <p>Protect your natural hair while looking absolutely stunning</p>
+              </div>
+            </div>
+            <div class="emotional-benefit-item">
+              <span class="benefit-emoji">⚡</span>
+              <div>
+                <strong>Ready in 60 Seconds</strong>
+                <p>No salon, no styling hours, no stress — just put it on and go</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: BEFORE & AFTER ===== -->
+  <section class="transformations-section" id="transformations">
+    <div class="container">
+      <div class="section-label">Transformations</div>
+      <h2 class="section-title">See The Difference For Yourself</h2>
+      <p class="section-subtitle">Real women. Real results. No filters — just gorgeous hair.</p>
+
+      <div class="ba-gallery">
+        <div class="ba-card">
+          <div class="ba-images">
+            <div class="ba-side before-side">
+              <img src="images/before-1.png" alt="Before transformation" />
+              <span class="ba-label">BEFORE</span>
+            </div>
+            <div class="ba-divider">
+              <div class="ba-arrow">→</div>
+            </div>
+            <div class="ba-side after-side">
+              <img src="images/after-1.png" alt="After transformation" />
+              <span class="ba-label after-label">AFTER</span>
+            </div>
+          </div>
+          <div class="ba-caption">
+            <span class="ba-name">Sarah M.</span>
+            <span class="ba-stars">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="ba-card">
+          <div class="ba-images">
+            <div class="ba-side before-side">
+              <img src="images/before-2.png" alt="Before transformation" />
+              <span class="ba-label">BEFORE</span>
+            </div>
+            <div class="ba-divider">
+              <div class="ba-arrow">→</div>
+            </div>
+            <div class="ba-side after-side">
+              <img src="images/after-2.png" alt="After transformation" />
+              <span class="ba-label after-label">AFTER</span>
+            </div>
+          </div>
+          <div class="ba-caption">
+            <span class="ba-name">Jasmine T.</span>
+            <span class="ba-stars">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="ba-card">
+          <div class="ba-images">
+            <div class="ba-side before-side">
+              <img src="images/before-3.png" alt="Before transformation" />
+              <span class="ba-label">BEFORE</span>
+            </div>
+            <div class="ba-divider">
+              <div class="ba-arrow">→</div>
+            </div>
+            <div class="ba-side after-side">
+              <img src="images/after-3.png" alt="After transformation" />
+              <span class="ba-label after-label">AFTER</span>
+            </div>
+          </div>
+          <div class="ba-caption">
+            <span class="ba-name">Monique R.</span>
+            <span class="ba-stars">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-proof-bar">
+        <div class="sp-item sp-customers">
+          <div class="sp-icon">👑</div>
+          <div class="sp-number">10,000<span>+</span></div>
+          <div class="sp-label">Happy Customers</div>
+        </div>
+        <div class="sp-item sp-satisfaction">
+          <div class="sp-icon">💖</div>
+          <div class="sp-number">95<span>%</span></div>
+          <div class="sp-label">Satisfaction Rate</div>
+        </div>
+        <div class="sp-item sp-orders">
+          <div class="sp-icon">✈️</div>
+          <div class="sp-number">50,000<span>+</span></div>
+          <div class="sp-label">Orders Delivered</div>
+        </div>
+        <div class="sp-item sp-rating">
+          <div class="sp-icon">⭐</div>
+          <div class="sp-number">4.9<span>★</span></div>
+          <div class="sp-label">Average Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== SECTION 5: PRODUCT SPECIFICATIONS ===== -->
+  <section class="specs-section" id="specs">
+    <div class="container">
+      <div class="section-label">Specifications</div>
+      <h2 class="section-title">Product Specifications</h2>
+      <p class="section-subtitle">Everything you need to know about your new favorite wig</p>
+
+      <div class="specs-layout">
+        <div class="specs-image-col">
+          <img
+            src="images/wig-side.jpg"
+            alt="Premium Ombre Blonde Body Wave Wig — 24 Inch"
+            class="specs-img"
+            loading="lazy"
+          />
+          <div class="specs-overlay-badge">
+            <div class="sob-title">24" Body Wave</div>
+            <div class="sob-sub">Ombre Blonde</div>
+            <div class="sob-sub">150% Density</div>
+          </div>
+        </div>
+        <div class="specs-info-col">
+          <div class="specs-grid">
+            <div class="spec-card">
+              <div class="spec-icon">📏</div>
+              <div class="spec-key">Hair Length</div>
+              <div class="spec-val">24 Inches</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-icon">💪</div>
+              <div class="spec-key">Density</div>
+              <div class="spec-val">150%</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-icon">🕸️</div>
+              <div class="spec-key">Lace Type</div>
+              <div class="spec-val">13×3 Lace Front</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-icon">🧶</div>
+              <div class="spec-key">Material</div>
+              <div class="spec-val">Heat Resistant Synthetic Fiber</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-icon">👑</div>
+              <div class="spec-key">Cap Size</div>
+              <div class="spec-val">Adjustable Average Size</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-icon">🎨</div>
+              <div class="spec-key">Color</div>
+              <div class="spec-val">Ombre Blonde</div>
+            </div>
+          </div>
+          <div class="suitable-for">
+            <h4 class="suitable-title">✨ Suitable For</h4>
+            <div class="suitable-tags">
+              <span class="suitable-tag">Daily Wear</span>
+              <span class="suitable-tag">Photoshoots</span>
+              <span class="suitable-tag">Events & Parties</span>
+              <span class="suitable-tag">Fashion Styling</span>
+              <span class="suitable-tag">Content Creation</span>
+            </div>
+          </div>
+          <a href="#consultation" class="btn btn-primary btn-md">Order Yours Today →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: WHY CHOOSE US ===== -->
+  <section class="comparison-section" id="comparison">
+    <div class="container">
+      <div class="section-label">Why Us</div>
+      <h2 class="section-title">Why Women Choose Our Wig</h2>
+      <p class="section-subtitle">Not all wigs are created equal. Here's the difference.</p>
+
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="feature-col">Feature</th>
+              <th class="our-col">
+                <div class="our-col-header">
+                  <span class="our-logo">✦ GlowHair™</span>
+                  <span class="our-badge">Our Wig</span>
+                </div>
+              </th>
+              <th class="typical-col">Typical Wig</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Natural Hairline</td>
+              <td class="our-cell"><span class="check yes">✓</span></td>
+              <td><span class="check no">✗</span> Artificial</td>
+            </tr>
+            <tr>
+              <td>Hair Texture</td>
+              <td class="our-cell"><span class="check yes">✓</span> Soft & Silky</td>
+              <td><span class="check no">✗</span> Rough & Shiny</td>
+            </tr>
+            <tr>
+              <td>Weight & Comfort</td>
+              <td class="our-cell"><span class="check yes">✓</span> Lightweight</td>
+              <td><span class="check no">✗</span> Heavy</td>
+            </tr>
+            <tr>
+              <td>Installation</td>
+              <td class="our-cell"><span class="check yes">✓</span> Easy — 60 Seconds</td>
+              <td><span class="check no">✗</span> Difficult</td>
+            </tr>
+            <tr>
+              <td>Color Blend</td>
+              <td class="our-cell"><span class="check yes">✓</span> Premium Gradient</td>
+              <td><span class="check no">✗</span> Poor Color</td>
+            </tr>
+            <tr>
+              <td>Appearance</td>
+              <td class="our-cell"><span class="check yes">✓</span> Realistic</td>
+              <td><span class="check no">✗</span> Cheap Shine</td>
+            </tr>
+            <tr>
+              <td>Daily Wear</td>
+              <td class="our-cell"><span class="check yes">✓</span> Perfect</td>
+              <td><span class="check no">✗</span> Uncomfortable</td>
+            </tr>
+            <tr>
+              <td>Beginner Friendly</td>
+              <td class="our-cell"><span class="check yes">✓</span> Yes</td>
+              <td><span class="check no">✗</span> No</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: REVIEWS ===== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-label">Customer Love</div>
+      <h2 class="section-title">Real Women. Real Results.</h2>
+      <p class="section-subtitle">Don't just take our word for it — hear from our customers</p>
+
+      <div class="reviews-summary">
+        <div class="reviews-score">
+          <div class="score-number">4.9</div>
+          <div class="score-stars">⭐⭐⭐⭐⭐</div>
+          <div class="score-count">Based on 2,847 reviews</div>
+        </div>
+        <div class="reviews-breakdown">
+          <div class="rb-row"><span class="rb-label">5 ⭐</span><div class="rb-bar"><div class="rb-fill" style="width:91%"></div></div><span class="rb-pct">91%</span></div>
+          <div class="rb-row"><span class="rb-label">4 ⭐</span><div class="rb-bar"><div class="rb-fill" style="width:6%"></div></div><span class="rb-pct">6%</span></div>
+          <div class="rb-row"><span class="rb-label">3 ⭐</span><div class="rb-bar"><div class="rb-fill" style="width:2%"></div></div><span class="rb-pct">2%</span></div>
+          <div class="rb-row"><span class="rb-label">2 ⭐</span><div class="rb-bar"><div class="rb-fill" style="width:1%"></div></div><span class="rb-pct">1%</span></div>
+          <div class="rb-row"><span class="rb-label">1 ⭐</span><div class="rb-bar"><div class="rb-fill" style="width:0%"></div></div><span class="rb-pct">0%</span></div>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&q=80&auto=format&fit=crop&crop=face" alt="Sarah M." class="reviewer-avatar" />
+            <div class="reviewer-info">
+              <div class="reviewer-name">Sarah M. <span class="verified-badge">✓ Verified</span></div>
+              <div class="reviewer-location">📍 Atlanta, USA</div>
+              <div class="reviewer-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"Everyone thought it was my real hair. I went to my sister's wedding and literally had people asking me what salon I go to. This wig is absolutely <strong>stunning</strong> — the color is just breathtaking in person."</p>
+          <div class="review-date">Reviewed 2 weeks ago</div>
+        </div>
+
+        <div class="review-card featured-review">
+          <div class="review-header">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop&crop=face" alt="Monique R." class="reviewer-avatar" />
+            <div class="reviewer-info">
+              <div class="reviewer-name">Monique R. <span class="verified-badge">✓ Verified</span></div>
+              <div class="reviewer-location">📍 London, UK</div>
+              <div class="reviewer-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"This completely changed my confidence. After postpartum hair loss I felt invisible. The moment I put this on, I felt like <em>myself</em> again. I actually cried. I don't think you understand how much this means to women who struggle with hair loss."</p>
+          <div class="review-date">Reviewed 1 month ago</div>
+          <div class="review-helpful">👍 842 people found this helpful</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face" alt="Jasmine T." class="reviewer-avatar" />
+            <div class="reviewer-info">
+              <div class="reviewer-name">Jasmine T. <span class="verified-badge">✓ Verified</span></div>
+              <div class="reviewer-location">📍 Toronto, Canada</div>
+              <div class="reviewer-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"I've never received so many compliments in my life. Wore it to a birthday party and literally could not stop getting stopped for pictures. Ordered a second one already!"</p>
+          <div class="review-date">Reviewed 3 weeks ago</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80&q=80&auto=format&fit=crop&crop=face" alt="Brittany K." class="reviewer-avatar" />
+            <div class="reviewer-info">
+              <div class="reviewer-name">Brittany K. <span class="verified-badge">✓ Verified</span></div>
+              <div class="reviewer-location">📍 Sydney, Australia</div>
+              <div class="reviewer-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"The color is absolutely stunning. The ombre blend is so perfect — it looks like I spent hundreds at a salon. Ships fast, comes beautifully packaged, and the quality is incredible for the price."</p>
+          <div class="review-date">Reviewed 5 days ago</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=80&q=80&auto=format&fit=crop&crop=face" alt="Layla H." class="reviewer-avatar" />
+            <div class="reviewer-info">
+              <div class="reviewer-name">Layla H. <span class="verified-badge">✓ Verified</span></div>
+              <div class="reviewer-location">📍 Paris, France</div>
+              <div class="reviewer-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"As a first-time wig wearer I was so nervous. It took me literally 2 minutes to put on and it looks completely natural. My coworkers had no idea I was wearing a wig for 3 months!"</p>
+          <div class="review-date">Reviewed 1 week ago</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=80&q=80&auto=format&fit=crop&crop=face" alt="Camille J." class="reviewer-avatar" />
+            <div class="reviewer-info">
+              <div class="reviewer-name">Camille J. <span class="verified-badge">✓ Verified</span></div>
+              <div class="reviewer-location">📍 Houston, USA</div>
+              <div class="reviewer-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"I bought the Buy 3 bundle and gifted 2 to my mom and sister. All three of us are obsessed. My mom cried when she saw herself in the mirror — she's been dealing with thinning hair for years. Thank you for this."</p>
+          <div class="review-date">Reviewed 2 months ago</div>
+        </div>
+      </div>
+
+      <div class="reviews-cta">
+        <a href="#consultation" class="btn btn-primary">Shop Now & Transform Your Look →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8: SHIPPING ===== -->
+  <section class="shipping-section" id="shipping">
+    <div class="container">
+      <div class="section-label">Delivery</div>
+      <h2 class="section-title">Fast & Reliable Shipping</h2>
+      <p class="section-subtitle">We deliver beautiful hair to your doorstep, worldwide</p>
+
+      <div class="shipping-grid">
+        <div class="shipping-card processing">
+          <div class="ship-icon">📦</div>
+          <h3>Order Processing</h3>
+          <div class="ship-time">1–3 Business Days</div>
+          <p>Your order is carefully prepared, quality-checked, and packaged with love.</p>
+        </div>
+        <div class="shipping-card">
+          <div class="ship-flag">🇺🇸</div>
+          <h3>United States</h3>
+          <div class="ship-time">5–10 Business Days</div>
+          <p>Free standard shipping. Express options available at checkout.</p>
+        </div>
+        <div class="shipping-card">
+          <div class="ship-flag">🇨🇦</div>
+          <h3>Canada</h3>
+          <div class="ship-time">7–12 Business Days</div>
+          <p>Free standard shipping. Duties & taxes may apply.</p>
+        </div>
+        <div class="shipping-card">
+          <div class="ship-flag">🇬🇧</div>
+          <h3>United Kingdom</h3>
+          <div class="ship-time">7–15 Business Days</div>
+          <p>Free standard shipping to all UK addresses.</p>
+        </div>
+        <div class="shipping-card">
+          <div class="ship-flag">🌍</div>
+          <h3>Europe</h3>
+          <div class="ship-time">7–15 Business Days</div>
+          <p>Free standard shipping across all European countries.</p>
+        </div>
+        <div class="shipping-card">
+          <div class="ship-flag">🇦🇺</div>
+          <h3>Australia</h3>
+          <div class="ship-time">7–15 Business Days</div>
+          <p>Free standard shipping to all Australian states.</p>
+        </div>
+      </div>
+
+      <div class="shipping-benefits">
+        <div class="ship-benefit"><span>📍</span><span>Real-Time Tracking Included</span></div>
+        <div class="ship-benefit"><span>🔒</span><span>Secure & Insured Delivery</span></div>
+        <div class="ship-benefit"><span>💬</span><span>24/7 Customer Support</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 9: GUARANTEE ===== -->
+  <section class="guarantee-section" id="guarantee">
+    <div class="container">
+      <div class="guarantee-inner">
+        <div class="guarantee-badge-col">
+          <div class="guarantee-badge">
+            <div class="guarantee-ring">
+              <span class="guarantee-number">30</span>
+              <span class="guarantee-day">Day</span>
+              <span class="guarantee-word">Guarantee</span>
+            </div>
+          </div>
+        </div>
+        <div class="guarantee-content-col">
+          <div class="section-label">Our Promise</div>
+          <h2 class="section-title left-aligned">Shop With Confidence</h2>
+          <p class="guarantee-desc">We stand behind every single wig we sell. If for any reason you're not completely in love with your purchase, we'll make it right — no questions asked.</p>
+          <div class="guarantee-items">
+            <div class="guarantee-item">
+              <span class="gi-icon">🛡️</span>
+              <div>
+                <strong>30-Day Satisfaction Guarantee</strong>
+                <p>Not happy? Return it within 30 days for a full refund or exchange.</p>
+              </div>
+            </div>
+            <div class="guarantee-item">
+              <span class="gi-icon">🔒</span>
+              <div>
+                <strong>Secure Payment Processing</strong>
+                <p>256-bit SSL encryption on every transaction. Your data is always safe.</p>
+              </div>
+            </div>
+            <div class="guarantee-item">
+              <span class="gi-icon">📍</span>
+              <div>
+                <strong>Order Tracking</strong>
+                <p>Track your package in real-time from our warehouse to your door.</p>
+              </div>
+            </div>
+            <div class="guarantee-item">
+              <span class="gi-icon">💬</span>
+              <div>
+                <strong>Responsive Customer Support</strong>
+                <p>Our team is available 7 days a week to assist you with any questions.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#consultation" class="btn btn-primary btn-md">Shop Risk-Free →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 10: FAQ ===== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know before you buy</p>
+
+      <div class="faq-list">
+        <div class="faq-item" id="faq1">
+          <button class="faq-question" onclick="toggleFaq(1)" aria-expanded="false">
+            <span>Will people know I'm wearing a wig?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely not — when worn correctly, our 13×3 lace front creates an undetectable hairline that blends perfectly with your skin. Thousands of customers wear our wigs daily and report that friends, family, and coworkers had no idea. The natural-looking ombre color and realistic body wave texture make it virtually indistinguishable from natural hair.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq2">
+          <button class="faq-question" onclick="toggleFaq(2)" aria-expanded="false">
+            <span>Can beginners wear this wig?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! This wig was specifically designed with beginners in mind. The adjustable cap straps and built-in combs make it incredibly easy to secure. Most customers have it on and looking perfect in under 60 seconds. No special tools or techniques required — just put it on and you're ready to go.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq3">
+          <button class="faq-question" onclick="toggleFaq(3)" aria-expanded="false">
+            <span>Can I wear it every day?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. Our wig is engineered for everyday wear. The lightweight construction (less than 150g) means you'll barely notice it's there. The breathable cap design prevents discomfort even after extended wear. With proper care, this wig can last 6-12 months with daily use.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq4">
+          <button class="faq-question" onclick="toggleFaq(4)" aria-expanded="false">
+            <span>Is the cap adjustable?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! The cap features adjustable velcro straps at the back that can be tightened or loosened to fit head circumferences from 21" to 23". It also has 3 combs (front, back, and sides) that clip into your natural hair for extra security. One size truly does fit all.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq5">
+          <button class="faq-question" onclick="toggleFaq(5)" aria-expanded="false">
+            <span>How long does shipping take?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Orders are processed in 1-3 business days. Then delivery typically takes:<br /><br />
+            🇺🇸 USA: 5–10 business days<br />
+            🇨🇦 Canada: 7–12 business days<br />
+            🇬🇧 UK: 7–15 business days<br />
+            🌍 Europe: 7–15 business days<br />
+            🇦🇺 Australia: 7–15 business days<br /><br />
+            All orders include tracking so you can follow your package every step of the way.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq6">
+          <button class="faq-question" onclick="toggleFaq(6)" aria-expanded="false">
+            <span>How do I maintain the wig?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Caring for your wig is simple:<br /><br />
+            🧴 <strong>Wash:</strong> Use a gentle wig shampoo in cool water every 8-10 wears<br />
+            💆 <strong>Condition:</strong> Apply wig conditioner, leave for 2-3 minutes, rinse gently<br />
+            💨 <strong>Dry:</strong> Gently blot with a towel, then air dry on a wig stand<br />
+            🔥 <strong>Style:</strong> Use heat tools on low-medium setting (max 180°C)<br />
+            🛏️ <strong>Storage:</strong> Store on a wig stand or in the box when not in use<br /><br />
+            We recommend adding our Premium Wig Care Kit for everything you need!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 11: FREE CONSULTATION ===== -->
+  <section class="consultation-section" id="consultation">
+    <div class="container">
+      <div class="consultation-inner">
+        <div class="consultation-content">
+          <div class="section-label light-label">Free Service</div>
+          <h2 class="section-title light-title">Need Help Choosing<br />The Perfect Wig?</h2>
+          <p class="consultation-desc">Our beauty specialists will help you choose the best wig based on your face shape, skin tone, lifestyle, and goals — completely free of charge.</p>
+          <div class="consultation-promises">
+            <div class="cp-item"><span>✓</span> Personalized recommendations</div>
+            <div class="cp-item"><span>✓</span> Face shape guidance</div>
+            <div class="cp-item"><span>✓</span> Skin tone color matching</div>
+            <div class="cp-item"><span>✓</span> Styling tips & tutorials</div>
+            <div class="cp-item"><span>✓</span> No purchase required</div>
+          </div>
+          <img src="images/consultation.jpg" alt="Get a free consultation with our beauty specialist" class="consultation-img" loading="lazy" />
+        </div>
+
+        <div class="consultation-form-col">
+          <div class="consultation-form-card">
+            <h3 class="form-title">Get Your Free Consultation</h3>
+            <p class="form-subtitle">Response within 24 hours</p>
+
+            <form class="consultation-form" id="consultationForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="country">Country *</label>
+                <select id="country" name="country" required>
+                  <option value="" disabled selected>Select your country</option>
+                  <option value="us">🇺🇸 United States</option>
+                  <option value="ca">🇨🇦 Canada</option>
+                  <option value="gb">🇬🇧 United Kingdom</option>
+                  <option value="au">🇦🇺 Australia</option>
+                  <option value="fr">🇫🇷 France</option>
+                  <option value="de">🇩🇪 Germany</option>
+                  <option value="nl">🇳🇱 Netherlands</option>
+                  <option value="other">🌍 Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="goal">What's Your Main Goal? *</label>
+                <select id="goal" name="goal" required>
+                  <option value="" disabled selected>Select your goal</option>
+                  <option value="everyday">Everyday Wear</option>
+                  <option value="hairloss">Hair Loss Solution</option>
+                  <option value="fashion">Fashion Transformation</option>
+                  <option value="event">Special Event</option>
+                  <option value="notsure">Not Sure Yet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell Us About Yourself (Optional)</label>
+                <textarea id="message" name="message" rows="3" placeholder="Any specific concerns or questions about your hair, lifestyle, or needs..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-full" id="consultSubmitBtn">
+                💬 GET MY FREE CONSULTATION
+              </button>
+
+              <p class="form-disclaimer">🔒 Your information is 100% private and will never be shared.</p>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <div class="success-icon">✅</div>
+              <h3>Thank you!</h3>
+              <p>Our wig specialist will contact you within 24 hours.</p>
+              <a href="#consultation" class="btn btn-primary btn-md">Shop Now While Stock Lasts →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 12: FINAL OFFER ===== -->
+  <section class="final-offer-section" id="finalOffer">
+    <div class="container">
+      <div class="fo-content">
+        <div class="section-label light-label">Last Chance</div>
+        <h2 class="fo-headline">Ready To Feel Beautiful Again?</h2>
+        <p class="fo-sub">Thousands of women are already enjoying fuller, longer, confidence-boosting hair.<br />Don't wait — your transformation is one click away.</p>
+
+        <div class="fo-urgency">
+          <span class="urgency-dot"></span>
+          <span>🔥 <strong id="stockCount">17</strong> wigs left at this price — order now before they're gone</span>
+        </div>
+
+        <div class="fo-pricing-cards">
+          <div class="fo-card">
+            <div class="fo-card-label">Single Wig</div>
+            <div class="fo-old">$149</div>
+            <div class="fo-new">$99</div>
+            <div class="fo-save">Save $50</div>
+            <a href="#consultation" class="btn btn-outline-gold" onclick="selectFinalOfferPackage('Single Wig')">Buy Now</a>
+          </div>
+          <div class="fo-card fo-card-popular">
+            <div class="fo-popular-tag">🔥 Most Popular</div>
+            <div class="fo-card-label">Buy 2 Wigs</div>
+            <div class="fo-old">$298</div>
+            <div class="fo-new">$179</div>
+            <div class="fo-save">Save $119</div>
+            <a href="#consultation" class="btn btn-gold" onclick="selectFinalOfferPackage('Buy 2 Wigs')">Buy Now — Best Deal</a>
+          </div>
+          <div class="fo-card">
+            <div class="fo-card-label">Buy 3 Wigs</div>
+            <div class="fo-old">$447</div>
+            <div class="fo-new">$249</div>
+            <div class="fo-save">Save $198</div>
+            <a href="#consultation" class="btn btn-outline-gold" onclick="selectFinalOfferPackage('Buy 3 Wigs')">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="fo-free-shipping">
+          🚚 <strong>FREE Shipping Included</strong> on All Orders
+        </div>
+
+        <div class="fo-ctas">
+          <a href="#consultation" class="btn btn-gold btn-xl" onclick="selectFinalOfferPackage('Claim Discount')">🛍️ BUY NOW — CLAIM YOUR DISCOUNT</a>
+          <a href="#consultation" class="btn btn-outline-light btn-xl">💬 GET FREE CONSULTATION</a>
+        </div>
+
+        <div class="fo-trust">
+          <span>🔒 Secure Checkout</span>
+          <span>✅ 30-Day Guarantee</span>
+          <span>📦 Free Shipping</span>
+          <span>⭐ 4.9/5 Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">✦</span>
+            <span class="logo-text">GlowHair<sup>™</sup></span>
+          </div>
+          <p class="footer-tagline">Empowering women to feel beautiful, confident, and unstoppable — one wig at a time.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#hero">Home</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#specs">Specifications</a>
+          <a href="#faq">FAQ</a>
+          <a href="#consultation">Consultation</a>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <a href="#">Contact Us</a>
+          <a href="#">Shipping Policy</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <a href="mailto:support@glowhair.com">support@glowhair.com</a>
+          <p class="footer-hours">Mon–Fri: 9am–6pm EST<br />Sat–Sun: 10am–4pm EST</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 GlowHair™. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <div class="footer-payment-icons">
+          <span>VISA</span><span>MC</span><span>AMEX</span><span>PayPal</span><span>Apple Pay</span><span>Shop Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== STICKY MOBILE BUY BUTTON ===== -->
+  <div class="sticky-buy-bar" id="stickyBuyBar">
+    <div class="sticky-buy-inner">
+      <div class="sticky-info">
+        <span class="sticky-title">Premium Ombre Wig</span>
+        <span class="sticky-price"><s>$149</s> <strong>$99</strong> — Free Shipping</span>
+      </div>
+      <a href="#consultation" class="btn btn-primary btn-sticky">BUY NOW</a>
+    </div>
+  </div>
+
+  <!-- ===== NOTIFICATION TOAST ===== -->
+  <div class="notification-toast" id="notifToast"></div>
+
+  <script src="script.js?v=2.1"></script>
+</body>
+</html>
