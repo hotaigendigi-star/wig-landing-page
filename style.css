@@ -1544,7 +1544,12 @@ img { max-width: 100%; display: block; }
   .guarantee-inner { grid-template-columns: 1fr; }
   .guarantee-badge-col { display: flex; justify-content: center; }
   .consultation-inner { grid-template-columns: 1fr; }
-  .consultation-img { display: none; }
+  .consultation-img {
+    display: block;
+    height: 280px;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
   .features-grid { grid-template-columns: repeat(2, 1fr); }
   .shipping-grid { grid-template-columns: repeat(2, 1fr); }
   .reviews-grid { grid-template-columns: 1fr 1fr; }
@@ -1589,6 +1594,7 @@ img { max-width: 100%; display: block; }
   .specs-grid { grid-template-columns: 1fr; }
   .addons-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
+  .consultation-img { height: 220px; }
   .ba-gallery { grid-template-columns: 1fr; max-width: 100%; }
   .sticky-buy-bar { display: block; }
   .announcement-inner { gap: 12px; font-size: 0.75rem; }
